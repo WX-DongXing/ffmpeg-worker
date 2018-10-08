@@ -1,0 +1,27 @@
+.main-wrap {
+  width: 960px;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+
+  button {
+    flex: none;
+  }
+
+  label {
+    display: none;
+  }
+  input {
+    display: none;
+  }
+}
+
+.image-row {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
