@@ -155,4 +155,14 @@ function render() {
     uFrame: uBuffer,
     vFrame: vBuffer
   })
+
+  let t1 = performance.now();
+  Module._free(yBufferPtr);
+  Module._free(uBufferPtr);
+  Module._free(vBufferPtr);
+  Module._free(yBuffer);
+  Module._free(uBuffer);
+  Module._free(vBuffer);
+  let t2 = performance.now();
+  console.log(t2 -t1);
 }

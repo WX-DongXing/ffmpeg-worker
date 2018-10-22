@@ -72,6 +72,10 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
     this.reader.readAsArrayBuffer(this.file.nativeElement.files[0]);
   }
 
+  clear() {
+    this.yuvCanvas.clear();
+  }
+
   draw_init() {
     this.format = YUVBuffer.format({
       width: 640,

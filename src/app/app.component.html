@@ -12,6 +12,9 @@
   <label for="file" #label>Upload</label>
   <input type="file" required name="file" id="file" #file (change)="fileChange($event)" />
 
+  <button mat-stroked-button (click)="clear()">
+    clear
+  </button>
   <div class="canvas-area">
     <canvas #canvas></canvas>
   </div>
